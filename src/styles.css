@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vaikov {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.larester {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

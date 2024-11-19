@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lacquer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      class="flex justify-around items-center space-x-6 py-4 bg-white text-herobg1 pl-8 pr-8 fixed w-full top-0"
+    >
+      <div class="vaikov text-xl">
+        <h4>Manikandan A</h4>
+        <p>Java Developer</p>
+      </div>
+      <div class="vaikov space-x-6 font-sans text-xl">
+        <a
+          href="#about"
+          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          >About</a
+        >
+        <a
+          href="#experience"
+          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          >Experience</a
+        >
+        <a
+          href="#projects"
+          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          >Projects</a
+        >
+        <a
+          href="#skills"
+          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          >Skills</a
+        >
+        <a
+          href="#contact"
+          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header
+      class="flex justify-center text-center bg-gradient-to-r from-herobg1 to-herobg2 border-2 border-white hover:border-blue-500 p-14 mt-16"
+      id="#"
+    >
+      <div>
+        <h1 class="text-5xl font-bold animate-bounce text-white top-4 larester">
+          Welcome to My Portfolio
+        </h1>
+        <p class="mt-4 text-lg text-white vaikov">
+          A showcase of my projects, skills, and experiences
+        </p>
+      </div>
+    </header>
+    <!-- About Section -->
+    <div id="about">
+      <div class="flex h-screen items-center justify-center p-5">
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10"
+        >
+          <div>
+            <h1 class="mb-2 text-3xl font-bold text-blue-950 vaikov">
+              <span class="text-blue-950 vaikov">Hi,</span> I'm Full Stack
+              Developer
+            </h1>
+            <p class="mb-6 text-blue-700 vaikov">
+              Systems Engineer with 2+ years in backend development,
+              specializing in SOAP/REST APIs, Core Java, and Oracle SQL.
+              Experienced in managing JIRA tasks and using tools like IntelliJ
+              and SOAP UI. Eager to contribute to innovative software projects
+            </p>
+            <div class="flex justify-center space-x-5">
+              <button
+                class="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700"
+              >
+                Follow
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                  />
+                </svg>
+              </button>
+              <div class="flex justify-center items-center">
+                <a
+                  href="./public/MANIKANDAN A_Java_2+Years.pdf"
+                  download="Manikandan_Resume.pdf"
+                  class="bg-gradient-to-r from-herobg1 to-herobg2 text-white font-bold py-2 px-4 rounded vaikov"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./public/OIP.jfif"
+              alt=""
+              class="md:size-96 size-72 rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Experience Section -->
+    <section
+      class="space-y-6 mt-8 pb-28 bg-gradient-to-r from-gradient5 to-gradient6 p-6 relative"
+      id="experience"
+    >
+      <h1 class="vaikov text-center text-4xl font-bold text mt-8 text-white">
+        Experience
+      </h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 justify-around items-center pl-20 pr-20 space-x-6"
+      >
+        <!-- Card 1 -->
+        <div
+          class="card space-y-4 transition duration-300 ease-in-out transform hover:scale-110 text-center"
+        >
+          <img
+            src="./public/systemengineer.avif"
+            alt=""
+            class="mx-auto rounded-lg"
+          />
+          <div class="bg-white rounded-lg p-2">
+            <h4 class="text-blue-950 text-lg vaikov">System-Engineer</h4>
+            <h6 class="text-blue-950 text-lg vaikov">
+              Crown Solutions India Pvt Ltd(Client - TCS)
+            </h6>
+            <div class="flex justify-between items-center">
+              <span class="vaikov text-blue-950">March-2022</span>
+              <span class="vaikov text-blue-950">April-2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div
+          class="card space-y-4 text-center transition duration-300 ease-in-out transform hover:scale-110"
+        >
+          <img src="./public/associate.avif" alt="" class="rounded-lg" />
+          <div class="bg-white rounded-lg p-2">
+            <h4 class="text-blue-950 text-lg vaikov">Associate</h4>
+            <h6 class="text-blue-950 text-lg vaikov">Capgemini</h6>
+            <div class="flex justify-between items-center">
+              <span class="vaikov text-blue-950">August-2019</span>
+              <span class="vaikov text-blue-950">October-2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-white py-12" id="projects">
+      <h2 class="text-4xl font-semibold text-center text-blue-950 vaikov">
+        Projects
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-6"
+      >
+        <!-- Project 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./public/DALL·E 2024-11-20 01.41.04 - A professional and modern illustration for a project titled 'HDFC Digital Assurance.' The image showcases a tech-themed design with a focus on backend.webp"
+            alt="Project 1"
+            class="w-full h-40 object-cover rounded-t-lg"
+          />
+          <h3 class="mt-4 text-2xl font-semibold text-blue-700 vaikov">
+            HDFC-Digital Assurance
+          </h3>
+          <p class="mt-2 text-gray-600 vaikov">
+            The project is to develop Net Banking, Mobile Banking Services and
+            to maintain end-to-end transaction for Customers. There will be
+            multiple online transactions where customer will able to apply Loan,
+            Insurance, Invest in Mutual Funds via Net Banking and Mobile
+            Banking. For each and every transaction, the logs and service logs
+            are maintained in Oracle Database based on the User Id. The Aim is
+            to develop CR/enhancements/fix the bugs and deliver it into
+            Production.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./public/project-1.png"
+            alt="Project 1"
+            class="w-full h-40 object-cover rounded-t-lg"
+          />
+          <h3 class="mt-4 text-2xl font-semibold text-blue-700 vaikov">
+            Hotel-Website
+          </h3>
+          <p class="mt-2 text-gray-600 vaikov">
+            The project is to develop hotel website, used tools like html and
+            css.developing purpose was for improving my html and css skills.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./public/project-2.png"
+            alt="Project 1"
+            class="w-full h-40 object-cover rounded-t-lg"
+          />
+          <h3 class="mt-4 text-2xl font-semibold text-blue-700 vaikov">
+            Online Courses-Website
+          </h3>
+          <p class="mt-2 text-gray-600 vaikov">
+            The project is for developing Tutorial website using figma
+            pictures.This project was developed for improving my technical
+            skills like Html and TailwindCSS
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      class="p-6 mt-10 bg-gradient-to-r from-gradient7 to-gradient8 mx-auto pt-12 relative"
+      id="skills"
+    >
+      <h1 class="text-center text-4xl font-bold vaikov text-blue-950">
+        Skills
+      </h1>
+      <div
+        class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 px-8 rounded-lg pt-12"
+      >
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img src="./public/java.jpg" alt="" class="w-full rounded-full" />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">Java</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img src="./public/camel.avif" alt="" class="w-full rounded-full" />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">Camel</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img
+              src="./public/systemengineer.avif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">Spring</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img
+              src="./public/oracle.avif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">Oracle</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img
+              src="./public/spring.avif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">Spring</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img src="./public/html2.avif" alt="" class="w-full rounded-full" />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">HTML</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img src="./public/css.avif" alt="" class="w-full rounded-full" />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">CSS</h3>
+        </div>
+        <div
+          class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
+        >
+          <div>
+            <img src="./public/js.avif" alt="" class="w-full rounded-full" />
+          </div>
+          <h3 class="text-black text-lg nav-font pt-4">JavaScript</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="bg-gradient-to-r from-herobg1 to-herobg2 text-white py-12"
+      id="contact"
+    >
+      <h2 class="text-4xl font-semibold text-center vaikov">Get In Touch</h2>
+      <div
+        class="max-w-md mx-auto mt-8 bg-white text-blue-950 rounded-lg p-6 shadow-lg"
+      >
+        <form>
+          <div class="mb-4">
+            <label
+              for="name"
+              class="block text-sm font-medium vaikov text-blue-950"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-950"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-sm font-medium vaikov text-blue-950"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full py-2 bg-blue-950 text-white rounded-lg shadow-md hover:bg-blue-800 transition duration-300 vaikov"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
