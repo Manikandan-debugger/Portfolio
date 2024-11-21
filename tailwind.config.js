@@ -11,6 +11,9 @@ module.exports = {
         gradient7: "#D9ECFF",
         gradient8: "#D9ECFF",
       },
+      backgroundImage: {
+        "custom-image": "url('./public/systemengineerpic.avif')",
+      },
     },
   },
   plugins: [],
