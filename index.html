@@ -20,37 +20,102 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav
-      class="flex justify-around items-center space-x-6 py-4 bg-white text-herobg1 pl-8 pr-8 fixed w-full top-0"
-    >
-      <div class="vaikov text-xl">
-        <h4>Manikandan A</h4>
-        <p>Java Developer</p>
+    <nav class="bg-white text-blue-950 fixed w-full top-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-2xl font-bold vaikov text-blue-950"
+              >Manikandan A</a
+            >
+          </div>
+          <!-- Menu Button for Small Screens -->
+          <div class="block lg:hidden">
+            <button id="menu-button" class="text-black focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Navbar Links -->
+          <div id="menu-items" class="hidden lg:flex space-x-4">
+            <a
+              href="#home"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="px-3 py-2 rounded text-blue-950 hover:text-white hover:bg-blue-950 vaikov"
+              >Contact</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="vaikov space-x-6 font-sans text-xl">
+      <!-- Dropdown Menu for Small Screens -->
+      <div
+        id="dropdown-menu"
+        class="lg:hidden hidden bg-blue-950 px-4 py-2 space-y-2"
+      >
+        <a
+          href="#home"
+          class="block text-white hover:text-blue-400 px-3 py-2 rounded vaikov"
+          >Home</a
+        >
         <a
           href="#about"
-          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          class="block px-3 py-2 rounded text-white hover:text-blue-400 vaikov"
           >About</a
         >
         <a
           href="#experience"
-          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          class="block text-white hover:text-blue-400 px-3 py-2 rounded vaikov"
           >Experience</a
         >
         <a
           href="#projects"
-          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          class="block text-white hover:text-blue-400 px-3 py-2 rounded vaikov"
           >Projects</a
         >
         <a
           href="#skills"
-          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          class="block text-white hover:text-blue-400 px-3 py-2 rounded vaikov"
           >Skills</a
         >
         <a
           href="#contact"
-          class="px-4 py-2 rounded-lg hover:text-white hover:bg-herobg1"
+          class="block text-white hover:text-blue-400 px-3 py-2 rounded vaikov"
           >Contact</a
         >
       </div>
@@ -216,11 +281,18 @@
             class="w-full h-40 object-cover rounded-t-lg"
           />
           <h3 class="mt-4 text-2xl font-semibold text-blue-700 vaikov">
-            Hotel-Website
+            Travel Website Design
           </h3>
           <p class="mt-2 text-gray-600 vaikov">
-            The project is to develop hotel website, used tools like html and
-            css.developing purpose was for improving my html and css skills.
+            Description: This project involved designing a clean and visually
+            appealing travel website to showcase travel destinations, services,
+            and user engagement elements. The focus was on creating a seamless
+            and attractive layout for tourism professionals.
+          </p>
+          <p class="mt-2 text-gray-600 vaikov">
+            Tools & Technologies Used: Developed using HTML and CSS. The
+            responsive design was achieved with custom CSS to ensure
+            compatibility across devices.
           </p>
         </div>
         <div
@@ -232,12 +304,17 @@
             class="w-full h-40 object-cover rounded-t-lg"
           />
           <h3 class="mt-4 text-2xl font-semibold text-blue-700 vaikov">
-            Online Courses-Website
+            Coaching Platform Website
           </h3>
           <p class="mt-2 text-gray-600 vaikov">
-            The project is for developing Tutorial website using figma
-            pictures.This project was developed for improving my technical
-            skills like Html and TailwindCSS
+            Description: A modern and interactive coaching platform website
+            designed to promote courses, consultation services, and user
+            testimonials. The design emphasizes user experience with dynamic
+            interactivity and responsiveness.
+          </p>
+          <p class="mt-2 text-gray-600 vaikov">
+            Tools & Technologies Used: Built with HTML, Tailwind CSS, and
+            JavaScript for enhanced functionality and design flexibility.
           </p>
         </div>
       </div>
@@ -386,5 +463,13 @@
         </form>
       </div>
     </section>
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const dropdownMenu = document.getElementById("dropdown-menu");
+
+      menuButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
