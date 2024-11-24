@@ -24,14 +24,19 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="bg-white text-blue-950 fixed w-full top-0">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-white text-blue-950 fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
-          <div class="flex-shrink-0">
+          <div class="hidden sm:block">
             <a href="#" class="text-3xl font-bold vaikov text-blue-950"
               >Manikandan A</a
             >
+            <p class="vaikov">Java Developer</p>
+          </div>
+          <div class="block sm:hidden">
+            <a href="#" class="text-3xl font-bold vaikov text-blue-950">M A</a>
+            <p>J D</p>
           </div>
           <!-- Menu Button for Small Screens -->
           <div class="block lg:hidden">
@@ -127,7 +132,7 @@
 
     <!-- Header Section -->
     <header
-      class="flex justify-center text-center bg-gradient-to-r from-herobg1 to-herobg2 border-2 border-white hover:border-blue-500 p-14 mt-16"
+      class="flex justify-center w-full text-center bg-gradient-to-r from-herobg1 to-herobg2 border-2 border-white hover:border-blue-500 p-16 mt-16"
       id="home"
     >
       <div>
@@ -139,16 +144,114 @@
         </p>
       </div>
     </header>
+    <!-- slider-section -->
+    <section class="m-10">
+      <div class="relative mx-auto max-w-7xl overflow-hidden gap-4">
+        <div class="flex justify-evenly gap-4" id="slider">
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (10).jpeg"
+              alt="Image 1"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (11).jpeg"
+              alt="Image 2"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (2).jpeg"
+              alt="Image 3"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (3).jpeg"
+              alt="Image 4"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (4).jpeg"
+              alt="Image 5"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (5).jpeg"
+              alt="Image 6"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (6).jpeg"
+              alt="Image 7"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (7).jpeg"
+              alt="Image 8"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (8).jpeg"
+              alt="Image 9"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-1/3 flex-shrink-0">
+            <img
+              src="./public/Designer (9).jpeg"
+              alt="Image 10"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          id="prevBtn"
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/75 z-10"
+        >
+          &#10094;
+        </button>
+        <button
+          id="nextBtn"
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/75 z-10"
+        >
+          &#10095;
+        </button>
+      </div>
+    </section>
     <!-- About Section -->
-    <div id="about" class="bg-custom-image">
-      <div class="flex h-screen items-center justify-center p-5 hero bg">
+    <section
+      style="
+        height: 500px;
+        width: auto;
+        background-image: url('./public/home-module-3-v-20.avif');
+      "
+      id="about"
+      class="filter backdrop-blur-md"
+    >
+      <div class="flex items-center justify-evenly p-5 hero bg">
         <div
-          class="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10"
+          class="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10 z-30"
         >
           <div>
             <h1 class="mb-2 text-3xl font-bold text-blue-950 vaikov">
-              <span class="text-blue-950 vaikov">Hi,</span> I'm Full Stack
-              Developer
+              <span class="text-blue-950 vaikov">Hi,</span> I'm Java Developer
             </h1>
             <p class="mb-6 text-blue-950 vaikov">
               Systems Engineer with 2+ years in backend development,
@@ -175,45 +278,64 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- Experience Section -->
     <section
       class="space-y-6 mt-8 pb-28 bg-gradient-to-r from-gradient5 to-gradient6 p-6 relative"
       id="experience"
     >
-      <h1 class="vaikov text-center text-4xl font-bold text mt-8 text-white">
+      <h1 class="vaikov text-center text-4xl font-bold text-white mt-8">
         Experience
       </h1>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 justify-around items-center pl-20 pr-20 space-x-6"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 sm:mx-10 lg:mx-20 justify-center items-start space-y-6 sm:space-y-0"
       >
         <!-- Card 1 -->
         <div
-          class="card space-y-4 transition duration-300 ease-in-out transform hover:scale-110 text-center"
+          class="card space-y-4 transition duration-300 ease-in-out transform hover:scale-105 text-center"
         >
-          <img src="./public/img1.jpg" alt="" class="mx-auto rounded-lg" />
-          <div class="bg-white rounded-lg p-2">
-            <h4 class="text-blue-950 text-lg vaikov">System-Engineer</h4>
-            <h6 class="text-blue-950 text-lg vaikov">
-              Crown Solutions India Pvt Ltd(Client - TCS)
+          <img
+            src="./public/download.png"
+            alt="System Engineer"
+            class="mx-auto rounded-lg sm:p-4 w-full h-auto object-cover"
+          />
+          <div class="bg-white rounded-lg p-4 shadow-lg">
+            <h4
+              class="text-blue-950 text-xs sm:text-base lg:text-lg font-semibold"
+            >
+              System Engineer
+            </h4>
+            <h6 class="text-blue-950 text-sm sm:text-lg font-medium">
+              Crown Solutions India Pvt Ltd
             </h6>
-            <div class="flex justify-between items-center">
-              <span class="vaikov text-blue-950">March-2022</span>
-              <span class="vaikov text-blue-950">April-2024</span>
+            <div class="flex justify-between items-center text-xs sm:text-sm">
+              <span class="text-blue-950">March 2022</span>
+              <span class="text-blue-950">April 2024</span>
             </div>
           </div>
         </div>
-        <!-- card2 -->
+        <!-- Card 2 -->
         <div
-          class="card space-y-4 text-center transition duration-300 ease-in-out transform hover:scale-110"
+          class="card space-y-4 transition duration-300 ease-in-out transform hover:scale-105 text-center"
         >
-          <img src="./public/img2.avif" alt="" class="rounded-lg" />
-          <div class="bg-white rounded-lg p-2">
-            <h4 class="text-blue-950 text-lg vaikov">Associate</h4>
-            <h6 class="text-blue-950 text-lg vaikov">Capgemini</h6>
-            <div class="flex justify-between items-center">
-              <span class="vaikov text-blue-950">August-2019</span>
-              <span class="vaikov text-blue-950">October-2019</span>
+          <img
+            src="./public/sustem.png"
+            alt="Associate"
+            class="mx-auto rounded-lg sm:p-4 w-full h-auto object-cover"
+          />
+          <div class="bg-white rounded-lg p-4 shadow-lg">
+            <h4
+              class="text-blue-950 text-xs sm:text-base lg:text-lg font-semibold"
+            >
+              Associate
+            </h4>
+            <h6 class="text-blue-950 text-sm sm:text-lg font-medium">
+              Capgemini
+            </h6>
+            <div class="flex justify-between items-center text-xs sm:text-sm">
+              <span class="text-blue-950">August 2019</span>
+              <span class="text-blue-950">October 2019</span>
             </div>
           </div>
         </div>
@@ -304,27 +426,45 @@
       class="p-6 mt-10 bg-gradient-to-r from-gradient7 to-gradient8 mx-auto pt-12 relative"
       id="skills"
     >
-      <h1 class="text-center text-4xl font-bold vaikov text-blue-950">
+      <h1
+        class="text-center text-3xl sm:text-4xl md:text-5xl font-bold vaikov text-blue-950"
+      >
         Skills
       </h1>
       <div
-        class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 px-8 rounded-lg pt-12"
+        class="grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 px-8 rounded-lg pt-12"
       >
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
         >
           <div>
-            <img src="./public/java.jpg" alt="" class="w-full rounded-full" />
+            <img
+              src="./public/java.jpg"
+              alt="Java Programming"
+              class="w-full rounded-full"
+            />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">Java</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            Java
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
         >
           <div>
-            <img src="./public/camel.avif" alt="" class="w-full rounded-full" />
+            <img
+              src="./public/camel.avif"
+              alt="Apache Camel"
+              class="w-full rounded-full"
+            />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">Camel</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            Camel
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
@@ -332,11 +472,15 @@
           <div>
             <img
               src="./public/systemengineer.avif"
-              alt=""
+              alt="Spring Framework"
               class="w-full rounded-full"
             />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">Spring</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            Spring
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
@@ -344,11 +488,15 @@
           <div>
             <img
               src="./public/oracle.avif"
-              alt=""
+              alt="Oracle Database"
               class="w-full rounded-full"
             />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">Oracle</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            Oracle
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
@@ -356,35 +504,63 @@
           <div>
             <img
               src="./public/spring.avif"
-              alt=""
+              alt="Spring Framework"
               class="w-full rounded-full"
             />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">Spring</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            Spring
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
         >
           <div>
-            <img src="./public/html2.avif" alt="" class="w-full rounded-full" />
+            <img
+              src="./public/html2.avif"
+              alt="HTML"
+              class="w-full rounded-full"
+            />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">HTML</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            HTML
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
         >
           <div>
-            <img src="./public/css.avif" alt="" class="w-full rounded-full" />
+            <img
+              src="./public/css.avif"
+              alt="CSS"
+              class="w-full rounded-full"
+            />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">CSS</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            CSS
+          </h3>
         </div>
         <div
           class="card space-y-4 text-center bg-white px-8 py-12 transition duration-200 ease-in-out transform hover:scale-110"
         >
           <div>
-            <img src="./public/js.avif" alt="" class="w-full rounded-full" />
+            <img
+              src="./public/js.avif"
+              alt="JavaScript"
+              class="w-full rounded-full"
+            />
           </div>
-          <h3 class="text-black text-lg nav-font pt-4">JavaScript</h3>
+          <h3
+            class="text-black text-sm sm:text-lg md:text-xl lg:text-2xl nav-font pt-4 vaikov"
+          >
+            JavaScript
+          </h3>
         </div>
       </div>
     </section>
@@ -442,78 +618,126 @@
         </form>
       </div>
     </section>
-    <footer>
-      <div class="bg-white">
-        <div class="flex justify-center items-center space-x-6">
+    <footer class="bg-white py-8">
+      <div class="container mx-auto px-4">
+        <!-- Navigation Links -->
+        <div class="flex justify-center flex-wrap space-x-6 mb-8">
           <a
             href="#home"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >Home</a
           >
+            Home
+          </a>
           <a
             href="#about"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >About</a
           >
+            About
+          </a>
           <a
             href="#experience"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >Experience</a
           >
+            Experience
+          </a>
           <a
             href="#projects"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >Projects</a
           >
+            Projects
+          </a>
           <a
             href="#skills"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >Skills</a
           >
+            Skills
+          </a>
           <a
             href="#contact"
             class="px-3 py-2 rounded hover:text-blue-950 vaikov font-bold hover:underline"
-            >Contact</a
           >
+            Contact
+          </a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.facebook.com/login/">
+            <i
+              class="bi bi-facebook text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/">
+            <i
+              class="bi bi-instagram text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
+          <a href="https://web.whatsapp.com/">
+            <i
+              class="bi bi-whatsapp text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
+          <a href="https://www.linkedin.com/in/manikandan-a-lalgudi">
+            <i
+              class="bi bi-linkedin text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
+          <a href="https://github.com/Manikandan-debugger?tab=repositories">
+            <i
+              class="bi bi-github text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
+          <a href="https://myaccount.google.com/">
+            <i
+              class="bi bi-envelope text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
+            ></i>
+          </a>
         </div>
       </div>
     </footer>
-    <div class="flex justify-center items-center space-x-4 p-8">
-      <a href="https://www.facebook.com/login/"
-        ><i
-          class="bi bi-facebook text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-      <a href="https://www.instagram.com/accounts/login/"
-        ><i
-          class="bi bi-instagram text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-      <a href="https://web.whatsapp.com/"
-        ><i
-          class="bi bi-whatsapp text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-      <a href="https://www.linkedin.com/in/manikandan-a-lalgudi"
-        ><i
-          class="bi bi-linkedin text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-      <a href="https://github.com/Manikandan-debugger?tab=repositories"
-        ><i
-          class="bi bi-github text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-      <a href="https://myaccount.google.com/"
-        ><i
-          class="bi bi-envelope text-2xl hover:bg-blue-950 hover:text-white p-3 rounded-md"
-        ></i
-      ></a>
-    </div>
     <p class="text-center m-4">
       &copy; 2024 Manikandan.A. All rights reserved.
     </p>
     <script>
+      const slider = document.getElementById("slider"); // Get the slider container
+      const prevBtn = document.getElementById("prevBtn"); // Get the "Previous" button
+      const nextBtn = document.getElementById("nextBtn"); // Get the "Next" button
+
+      const slides = slider.children; // Get all the slides (images wrapped in divs)
+      const totalSlides = slides.length; // Total number of slides
+      const slidesPerPage = 3; // Number of slides visible per page
+      let currentIndex = 0; // Start at the first image
+
+      // Function to update the slider position
+      function updateSliderPosition() {
+        slider.style.transform = `translateX(-${
+          currentIndex * (100 / slidesPerPage)
+        }%)`;
+        // Calculate translation:
+        // - `100 / slidesPerPage` ensures each image is proportionally shifted
+        // Example: If 3 images fit per page, shift each by 33.33% of the slider's width.
+      }
+
+      // Handle "Next" button click
+      nextBtn.addEventListener("click", () => {
+        currentIndex += 1; // Move to the next slide
+        if (currentIndex === totalSlides) {
+          // If at the end, reset to the first slide for the looping effect
+          currentIndex = 0;
+        }
+        updateSliderPosition(); // Update the slider's position
+      });
+
+      // Handle "Previous" button click
+      prevBtn.addEventListener("click", () => {
+        currentIndex -= 1; // Move to the previous slide
+        if (currentIndex < 0) {
+          // If at the beginning, move to the last slide for the looping effect
+          currentIndex = totalSlides - 1;
+        }
+        updateSliderPosition(); // Update the slider's position
+      });
+
       const menuButton = document.getElementById("menu-button");
       const dropdownMenu = document.getElementById("dropdown-menu");
 
